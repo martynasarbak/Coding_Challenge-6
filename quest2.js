@@ -9,7 +9,7 @@ function answer(arr, num) {
         let sum = set[i]+set[j];
         if (sum < num && j-i===1) j++;
         else if (sum < num && j-i>1) i++;
-        else if (sum > num) return 'sorry cant help you';
+        else if (sum > num) return 'Sorry, cannot find two numbers to create the sum you\'re asking for';
         else if (sum === num) return [set[i], set[j]];
     }
     return 'Numbers in the array are too small to return the sum you\'re asking for!'
